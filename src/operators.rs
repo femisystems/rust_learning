@@ -40,4 +40,21 @@ pub fn operators_fn() {
   let cube_num_float_b = f64::powf(num, 4.6);
   println!("cube_num_float = {}", cube_num_float);
   println!("cube_num_float_b = {}", cube_num_float_b);
+
+  /*
+  -----------------------------------------
+
+  LOGICAL OPERATION
+
+  -----------------------------------------
+  */
+  let zebra = "zebra";
+  let goat = "goat";
+  let zebra_not_goat = zebra == goat;
+  println!("{}", zebra_not_goat);
+
+  let num_a = 5;
+  let num_b = 6;
+  let is_b_greater = num_b > num_a;
+  println!("{}", is_b_greater);  
 }
