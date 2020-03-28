@@ -10,8 +10,8 @@ struct Point {
 
 fn origin() -> Point {
   Point {
-    x: 0.0,
-    y: 0.0
+    x: 0.2,
+    y: 0.6
   }
 }
 
@@ -30,8 +30,11 @@ impl fmt::Display for Point {
 pub fn stack_and_heap() {
   let p1 = origin();
   let p2 = Box::new(origin());
+  // let p3 = *p2;
   
   println!("p1 uses a memory size of {}", mem::size_of_val(&p1));
   println!("p2 uses a memory size of {}", mem::size_of_val(&p2));
-  println!("The origin is {}", p2);
+
+  // let p3 = *p2;
+  println!("The origin is {}", p1);
 }
